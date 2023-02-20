@@ -4,15 +4,6 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.opaciti-sh1t{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: contrast(110%) blur(0.5px);
-}
 main{
     display: flex;
     flex-direction: column;
@@ -65,4 +56,43 @@ footer{
     box-shadow: 0px -1px 16px #444;
     position: fixed;
     bottom: 0;
+}
+
+@media screen and (max-width: 769px){
+    .form-floating{
+        width: 75%;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+    .feedback__img{
+        width: 100px;
+        height: 100px;
+    }
+    .feedback__title{
+        text-align: center;
+        margin-top: 20px;
+    }
+    footer{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 426px){
+    .form-floating{
+        width: 90%;
+    }
+    .feedback{
+        width: 90%;
+    }
+    .feedback__img{
+        width: 80px;
+        height: 80px;
+    }
+    .feedback__title{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .feedback__text{
+        font-size: 15px;
+    }
 }
